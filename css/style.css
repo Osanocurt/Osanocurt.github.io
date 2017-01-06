@@ -429,3 +429,6 @@ h2, h3 {color:#B4E1FF;}
 .navbar-default .navbar-nav>li>a:hover {
   color: #e74c3c;
 }
+.img-thumbnail {
+	border: 3px solid #111;
+}
