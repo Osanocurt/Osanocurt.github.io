@@ -343,8 +343,12 @@ h2, h3 {
 
   #home .jumbotron {
     background:rgba(34, 34, 34, 0.8);
-    border:none;
-    margin:25% auto;
+    margin-top: 300px;
+    margin-left: 250px;
+    padding: 15px;
+    border-radius: 15px;
+    width: 500px;
+}
 
   }
   form .row:first-child .floating-label-form-group {
