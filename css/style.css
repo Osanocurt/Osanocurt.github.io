@@ -156,6 +156,8 @@
 }
 .my-education .main h2 {
     margin:25px 0 20px 40px;
+    margin-top:65px;
+
 }
 .my-education .main p {
     margin:0 0 10px 40px;
@@ -235,7 +237,11 @@ p {
     line-height:1.7;
     color:#888;
 }
-h2, h3 {color:#B4E1FF;}
+h2, h3 {
+  color:#B4E1FF;
+
+}
+
 /* End My Framework */
 
 
@@ -310,11 +316,6 @@ h2, h3 {color:#B4E1FF;}
     resize: none;
   }
 
-  #footer {
-    padding: 10px;
-    background-color: #09d;
-    color: #fff;
-  }
   #home {
     background:rgba(34, 34, 34, 0.8);
     background-size:cover;
@@ -344,6 +345,7 @@ h2, h3 {color:#B4E1FF;}
     background:rgba(34, 34, 34, 0.8);
     border:none;
     margin:25% auto;
+
   }
   form .row:first-child .floating-label-form-group {
 }
