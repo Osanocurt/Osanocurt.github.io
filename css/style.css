@@ -100,9 +100,11 @@
 }
 .about-me .info h2 {
     margin:25px 0 20px 40px;
+
 }
 .about-me .info > p {
     margin:0 0 10px 40px;
+    text-align: center;
 }
 .about-me .info > p:last-of-type {
     margin-top:25px;
@@ -321,7 +323,7 @@ h2, h3 {
     background:rgba(34, 34, 34, 0.8);
     background-size:cover;
     background-color:#B4E1FF;
-    height:800px;
+    height:700px;
     vertical-align:middle;
   }
   @media screen and (max-width: 480px){
