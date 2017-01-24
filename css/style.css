@@ -5,7 +5,6 @@
 }
 
 
-/*define el estilo de la marca*/
 
 .navbar-inverse .navbar-brand,
 .navbar-inverse .navbar-nav li a {
@@ -24,7 +23,6 @@
 }
 
 
-/*esconde el subrayado y lo posiciona ademas de definir la animación*/
 
 .navbar-inverse .navbar-brand:before,
 .navbar-inverse .navbar-nav li a:before {
