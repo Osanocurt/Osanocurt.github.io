@@ -1,138 +1,343 @@
-    /* Remove the navbar's default rounded borders and increase the bottom margin */
-    .navbar {
-      margin-bottom: 50px;
-      border-radius: 10;
-    }
-
-body {
-  margin: 0px;
-  font-family: 'Open Sans', sans-serif;
-}
-.fb-profile img.fb-image-lg{
-    z-index: 0;
-    width: 100%;
-    margin-bottom: 30px;
+.navbar-inverse {
+  background: rgba(204, 204, 204, 0.6);
+  border-color: white;
+  font-family: 'Dosis', sans-serif;
 }
 
-.fb-image-profile
-{
-    margin: -90px 10px 0px 50px;
-    z-index: 9;
-    width: 20%;
-}
 
-@media (max-width:768px)
-{
+/*define el estilo de la marca*/
 
-.fb-profile-text>h1{
-    font-weight: 700;
-    font-size:16px;
-}
-
-.fb-image-profile {
-    margin: -45px 10px 0px 25px;
-    z-index: 9;
-    width: 20%;
-}
-}
-/* footer social icons */
-ul.social-network {
-	list-style: none;
-	display: inline;
-	margin-left:0 !important;
-	padding: 0;
-}
-ul.social-network li {
-	display: inline;
-	margin: 0 5px;
-}
-a {
- color: #B4E1FF
-}
-.animate {
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.info-card .info-card-details .info-card-detail .social {
-  list-style: none;
-  padding: 0px;
-  margin-top: 25px;
-  text-align: center;
-}
-.info-card .info-card-details .info-card-detail .social a {
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav li a {
   position: relative;
-  display: inline-block;
-  min-width: 40px;
-  padding: 10px 0px;
-  margin: 0px 5px;
-  overflow: hidden;
-  text-align: center;
-  background-color: rgb(215, 215, 215);
-  border-radius: 40px;
+  color: black;
+  text-decoration: none;
 }
 
-a.social-icon {
-  text-decoration: none !important;
-  box-shadow: 0px 0px 1px rgb(51, 51, 51);
-  box-shadow: 0px 0px 1px rgba(51, 51, 51, 0.7);
+.navbar-inverse .navbar-nav li a {
+  font-size: 18px;
 }
-a.social-icon:hover {
-  color: rgb(255, 255, 255) !important;
+
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-nav li a:hover {
+  color: black;
 }
-a.facebook {
-  color: rgb(59, 90, 154) !important;
+
+
+/*esconde el subrayado y lo posiciona ademas de definir la animación*/
+
+.navbar-inverse .navbar-brand:before,
+.navbar-inverse .navbar-nav li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 10px;
+  left: 0;
+  background-color: black;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 }
-a.facebook:hover {
-  background-color: rgb(59, 90, 154) !important;
+
+.navbar-inverse .navbar-nav li a:before {
+  width: 60%;
+  bottom: 8px;
+  left: 20%;
 }
-a.twitter {
-  color: rgb(45, 168, 225) !important;
+
+
+/*hace que se vea el subrayado y la animación*/
+
+.navbar-inverse .navbar-brand:hover:before,
+.navbar-inverse .navbar-nav li a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
-a.twitter:hover {
-  background-color: rgb(45, 168, 225) !important;
+
+.navbar-toggle {
+  background: black;
 }
-a.github {
-  color: rgb(51, 51, 51) !important;
+
+
+#jimena {
+  background: -webkit-radial-gradient(center, white, #99ccff);
+  height: 625px;
+  position: relative;
+  top: 0px;
 }
-a.github:hover {
-  background-color: rgb(51, 51, 51) !important;
+
+.yo {
+  border-radius: 50%;
+  width: 70%;
+  border: 5px solid white;
+  margin:0 auto;
+  position:relative;
+  left:-5%;
+
 }
-a.google-plus {
-  color: rgb(244, 94, 75) !important;
+
+#about {
+  position: relative;
+  top: -20px;
 }
-a.google-plus:hover {
-  background-color: rgb(244, 94, 75) !important;
+
+.juan {
+  padding: 8% 0 7% 10%;
 }
-a.linkedin {
-  color: rgb(1, 116, 179) !important;
+
+.jose {
+  padding: 9% 10%;
+  border-right: 2px solid #3399cc;
+  font-size: 23px;
 }
-a.linkedin:hover {
-  background-color: rgb(1, 116, 179) !important;
+
+.meh {
+  padding-bottom: 5%;
 }
-.destacados{
-    padding: 20px 0;
-	text-align: center;
+
+.meh p {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #666666;
 }
-.destacados > div > div{
-	padding: 10px;
-	border: 1px solid transparent;
-	border-radius: 4px;
-	transition: 0.2s;
+
+.relleno {
+  padding: 13%;
 }
-.destacados > div:hover > div{
-	margin-top: -10px;
-	border: 1px solid rgb(200, 200, 200);
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
-	background: rgba(200, 200, 200, 0.1);
-	transition: 0.5s;
+
+.personal {
+  border-radius: 50%;
+  position: relative;
+  width: 80%;
+  top: 27%;
+  left: 4%;
+  animation-name: fotografia;
+  animation-duration: 3s;
+  animation-timing-funcion: linear-out;
+  animation-delay: 0;
+  animation-itineration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
 }
-.container-fluid {
-    padding-right: 0px;
-    padding-left: 0px;
-    margin-right: auto;
-    margin-left: auto;
+
+#foto {
+  height: 600px;
+  position:absolute;
+  top:2%;
+}
+
+#texto {
+  height: 600px;
+  position:absolute;
+  left:21%;
+}
+
+h1 {
+  position: relative;
+  top: 19%;
+  left: -13%;
+  color: #999999;
+  font-size: 150px;
+  opacity: 0;
+  animation-name: hola;
+  animation-duration: 1.5s;
+  animation-timing-function: linear-out;
+  animation-delay: 3s;
+  animation-itineration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+.underline {
+  background-color: #666666;
+  opacity: 0;
+  height: 2px;
+  width: 100%;
+  position: relative;
+  top: 17%;
+  left: -2%;
+  animation-name: subrayado;
+  animation-duration: 3s;
+  animation-timing-funcion: linear-out;
+  animation-delay: 0;
+  animation-itineration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+.intro {
+  text-align: center;
+  color: #999999;
+  font-size: 25px;
+  position: relative;
+  top: 20%;
+  left: -10%;
+  opacity: 0;
+  animation-name: introduccion;
+  animation-duration: 2s;
+  animation-timing-function: linear-out;
+  animation-delay: 4.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+.nombre {
+  position: relative;
+
+  top:20%;
+  font-size: 30px;
+  opacity: 0;
+  font-family: 'Nothing You Could Do', cursive;
+  animation-name: jime;
+  animation-duration: 1.5s;
+  animation-timing-function: linear-out;
+  animation-delay: 6.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+.panel {
+  margin: 5% 0;
+}
+
+h3 {
+  font-size: 30px;
+  letter-spacing: 3px;
+  border-bottom: 1px solid black;
+  font-family: 'Inconsolata';
+}
+
+.mini {
+  border-radius: 5%;
+
+}
+
+.tres{
+      padding:5% 0;}
+
+#skills p {font-size:20px;
+           width:50%;
+           color:#666666;
+           margin:0 auto;
+           padding-top:1%;
+  font-family: 'Source Sans Pro', sans-serif;}
+#tomas{margin-left:8%;}
+
+.h4{ font-family: 'Inconsolata';
+     color:#3399cc;
+     font-size:20px;}
+.form-control{height:50px;
+              border:0px;
+              border-radius:0px;
+              border-bottom:2px solid black;}
+.social:hover{-webkit-transform:scale(1.1);
+        -moz-transform:scale(1.1);
+        -o-transform:scale(1.1);}
+.social{-webkit-transform:scale(0.8);
+        -moz-transform:scale(0.8);
+        -o-transfrom:scale(0.8);
+        -webkit-transition-duration: 0.5s;
+        -moz-transition-duration:0.5s;
+        -o-transition-duration:0.5s;}
+#social-em:hover{color:#f39c12;}
+#social-twitter:hover{color:#4099FF;}
+#social-insta:hover{color:#ff3399;}
+#social-link:hover{color:#0033ff;}
+#social-git:hover{color:black;}
+#social-free:hover{color:#006633;}
+#footer{background:rgba(204,204,204,1);
+        margin-top:5%;
+        padding:2% 0;}
+#htm{width:110%;}
+#css{width:73%;}
+#jvs{width:81%;}
+#jqu{width:80%;}
+#bts{width:80%;}
+#ps{width:80%;}
+.naranja{margin-left:-40%;}
+.azulon{margin-top:13%;
+        margin-left:-5%;}
+.morado{margin-top:13%;
+  margin-left:-5%}
+.celeste{margin-top:15%;
+         margin-left:-15%;}
+.azul{margin-top:-1%;
+      margin-left:-20%;}
+.amarillo{margin-left:-13%;
+          margin-top:-5%;}
+i{margin:0 1%;
+  color:black;}
+@keyframes subrayado {
+  0% {
+    opacity: 0;
+    width: 0%
+  }
+  100% {
+    opacity: 1;
+    width: 80%;
+  }
+}
+
+@keyframes hola {
+  0% {
+    opacity: 0;
+    transform: translate(0, 50px);
+  }
+  100% {
+    opacity: 1;
+    transfrom: translate(0, 0px);
+  }
+}
+
+@keyframes introduccion {
+  0% {
+    opacity: 0;
+    transform: translate(0, -50px);
+  }
+  100% {
+    opacity: 1;
+    transfrom: translate(0, 0);
+  }
+}
+
+@keyframes jime {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fotografia {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 500px){
+  .cambio, #skills .cambio{font-size:15px;
+                           width:100%;}
+  h3{font-size:20px;}
+
+  .jose{border:0px;
+        width:100%;
+        border-bottom:2px solid #3399cc;}
+
+  .hi {font-size:75px;}
+  .intro{font-size:15px;}
+  .nombre{font-size:20px;
+          }
+  #jimena{height:400px;
+  }
+  #foto{opacity:0;}
+  section{margin-left:8%;}
 }
